@@ -2,7 +2,7 @@
 Repositório para desafio Lendico para vaga de Engenheiro de dados.
 
 ## Produção/Airflow
-Para uso em produção/Airflow, uso da pasta DAG_scritp/
+Para uso em produção/Airflow, uso da pasta DAG_script/
 
 ## Dataflow
 
