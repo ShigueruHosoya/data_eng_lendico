@@ -1,4 +1,4 @@
-# data_eng_lendico
+# Lendico Challenge
 Repository for Lendico's Data Engineering role.
 
 ## Can be viewed at:
