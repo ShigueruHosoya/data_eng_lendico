@@ -25,6 +25,7 @@ Repositório para desafio Lendico para vaga de Engenheiro de dados.
 Para uso em produção/Airflow, uso da pasta DAG_script/
 
 ## Dataflow
+ - [FLOW] pipeline_masters.ipynb -> Power BI
 
 ![alt text](https://github.com/ShigueruHosoya/data_eng_lendico/blob/main/riotapi.png)
 
