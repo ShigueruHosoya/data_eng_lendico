@@ -39,8 +39,8 @@ except FileNotFoundError as err:
 queue_url = r"https://br1.api.riotgames.com/lol/league/v4/masterleagues/by-queue/RANKED_SOLO_5x5"
 mastery_url = r"https://br1.api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-summoner/"
 
-path_daily = r'./masters_daily/'
-path_ids = r'./masters_ids/'
+path_daily = r'../masters_daily/'
+path_ids = r'../masters_ids/'
 
 
 # In[4]:
@@ -138,7 +138,7 @@ tabular_data.drop(columns='entries',inplace=True)
 tabular_data['date'] = date_db
 
 # Delete today's date and Insert into riot.db
-conn = create_connection(r'.\db\riot.db')
+conn = create_connection(r'..\db\riot.db')
 cursor = conn.cursor()
 
 cursor.execute("delete from masters_daily where date ='{}' ".format(date_db)) 
@@ -174,7 +174,7 @@ mastery_data = pd.DataFrame(list(chain.from_iterable(merged)))
 
 
 # Delete today's date and Insert into riot.db
-conn = create_connection(r'.\db\riot.db')
+conn = create_connection(r'..\db\riot.db')
 cursor = conn.cursor()
 
 cursor.execute("delete from summoner_table where date ='{}'".format(date_db)) 
@@ -191,7 +191,7 @@ conn.close()
 
 
 # Get historical data from database and put as .csv for Power BI read (for no ODBC driver use)
-conn = create_connection(r'.\db\riot.db')
+conn = create_connection(r'..\db\riot.db')
 
 stacked_data = pd.read_sql('select * from summoner_table',con=conn)
 
