@@ -26,6 +26,7 @@ Para uso em produção/Airflow, uso da pasta DAG_script/
 
 ## Dataflow
  - [FLOW] pipeline_masters.ipynb -> Power BI
+ - [FLOW 2] DAG_script/scripts_lol_masters.py + DAG_script/DAG.py -> Power BI
 
 ![alt text](https://github.com/ShigueruHosoya/data_eng_lendico/blob/main/riotapi.png)
 
